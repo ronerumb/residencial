@@ -25,4 +25,9 @@ class VeiculosController extends Controller
         $veiculos->save();
         return redirect('/Veiculos');
      }
+     public function delete(Request $request){
+      $veiculos = Veiculos::find($request->input('id'));
+      $veiculos->delete();
+      return redirect('/Veiculos');
+   }
 }

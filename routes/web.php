@@ -22,6 +22,8 @@ Route::get('/Morador', 'MoradorController@index');
 Route::get('/Veiculos', 'VeiculosController@exibir');
 Route::get('/Veiculos/Cadastrar', 'VeiculosController@cadastrar');
 Route::post('/Veiculos/Salvar', 'VeiculosController@salvar');
+Route::post('/Veiculos/Deletar', 'VeiculosController@delete');
+
 Route::get('/Morador/Exibir', 'MoradorController@exibir');
 Route::post('/Morador/Salvar', 'MoradorController@salvar');
 Route::post('/Morador/Update', 'MoradorController@update');
