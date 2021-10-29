@@ -20,6 +20,9 @@ Route::get('/', function () {
 
 Route::get('/Morador', 'MoradorController@index');
 Route::get('/Veiculos', 'VeiculosController@exibir');
+Route::get('/Visitante', 'VisitanteController@exibir');
+Route::get('/Visitante/Cadastro', 'VisitanteController@cadastro');
+Route::post('/Visitante/Save', 'VisitanteController@save');
 Route::get('/Veiculos/Cadastrar', 'VeiculosController@cadastrar');
 Route::post('/Veiculos/Salvar', 'VeiculosController@salvar');
 Route::post('/Veiculos/Deletar', 'VeiculosController@delete');

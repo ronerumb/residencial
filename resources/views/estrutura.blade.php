@@ -18,6 +18,7 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="/Morador/Exibir">Moradores</a>
             <a class="nav-item nav-link" href="/Veiculos">Veiculos</a>
+            <a class="nav-item nav-link" href="/Visitante">Visitante</a>
 
            
           </div>

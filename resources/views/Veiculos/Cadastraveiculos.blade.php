@@ -20,6 +20,7 @@
                   <input type="text" class="form-control" id="obs" name="obs" placeholder="Observação">
                 </div>
                 <div class="form-group">
+                  <label for="id_morador">Morador</label>
                   <select name="id_morador" id="id_morador" class="form-select">
                       @foreach ($dado as $dados)
                       <option value="{{$dados->id}}">{{$dados->nome}}</option>

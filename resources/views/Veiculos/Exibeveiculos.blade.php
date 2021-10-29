@@ -4,10 +4,10 @@
 <br>
 <section>
     <form class="container" action="/Veiculos/Cadastrar">
-        <input type="submit" value="Cadastrar Veiculo" class="btn-dark ">
+        <input type="submit" value="Cadastrar Veiculo" class="btn btn-primary">
 
     </form>
-
+<br>
     <table class="table table-hover container">
         <tr class="table-active" >
             <td>Modelo</td>
