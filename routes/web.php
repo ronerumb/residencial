@@ -13,14 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MoradorController@exibir');
 
 
 Route::get('/Morador', 'MoradorController@index');
 Route::get('/Veiculos', 'VeiculosController@exibir');
 Route::get('/Visitante', 'VisitanteController@exibir');
+Route::post('/Visitante', 'VisitanteController@exibir');
+Route::post('/Visitante/Deletar', 'VisitanteController@delete');
+Route::post('/Visitante/Saida', 'VisitanteController@saida');
+
 Route::get('/Visitante/Cadastro', 'VisitanteController@cadastro');
 Route::post('/Visitante/Save', 'VisitanteController@save');
 Route::get('/Veiculos/Cadastrar', 'VeiculosController@cadastrar');
